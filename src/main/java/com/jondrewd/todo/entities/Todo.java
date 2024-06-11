@@ -13,13 +13,14 @@ public class Todo {
     private Long id;
     private String name;
     private String description;
-    private boolean check;
     private int priority;
-    public Todo(Long id, String name, String description, boolean check, int priority) {
+
+    
+    public Todo(Long id, String name, String description, int priority) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.check = check;
+
         this.priority = priority;
     }
     public Long getId() {
@@ -39,12 +40,6 @@ public class Todo {
     }
     public void setDescription(String description) {
         this.description = description;
-    }
-    public boolean isCheck() {
-        return check;
-    }
-    public void setCheck(boolean check) {
-        this.check = check;
     }
     public int getPriority() {
         return priority;
